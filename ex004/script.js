@@ -1,7 +1,11 @@
 var nome = window.prompt('Qual é seu nome? ')
+var nome2 = window.prompt('Qual o nome do seu namorado?')
 var salario = parseFloat(window.prompt('Qual o seu salario'))
+var salario2 = parseFloat(window.prompt('Qual o salario do seu namorado'))
 
 document.write(`Ola ${nome}!estela seu nome tem ${nome.length} letras.<br>`)
+document.write(`O nome do seu namorado é ${nome2.toUpperCase()} <br/>`)
 document.write(`Seu nome em maiusculo é ${nome.toUpperCase()} <br/>`)
-document.write(`Seu nome em minusculoe é: ${nome.toLowerCase()}`)
-document.write(`Seu salario é: ${salario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'} )}`)
+document.write(`Seu nome em minusculoe é: ${nome.toLowerCase()} <br/>`)
+document.write(`Seu salario é: ${salario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'} )} <br/>`)
+document.write(`O salario do seu namorado é: ${salario2.toLocaleString('pt-br',{style: 'currency', currency: 'USD'} )}<br/>`)
